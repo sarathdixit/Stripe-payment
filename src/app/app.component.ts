@@ -45,7 +45,7 @@ export class AppComponent {
  
   createToken(): void {
     const name = this.stripeTest.get('name').value;
-    let clientSecret = "pi_1HJj93I24F1DWpOnF5gwAooY_secret_F0AYvoDGiub45nEv2HhJ7qL0M"
+    let clientSecret = "pi_1HJjZtI24F1DWpOnTy593J31_secret_cSw4hmBRZIXVLsI6M1wFmxV2K"
     this.stripeService.confirmCardPayment(clientSecret, {
       payment_method: {
         card: this.card.element,
